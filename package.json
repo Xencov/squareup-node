@@ -1,20 +1,23 @@
 {
-  "author": {
-    "name": "Xencov Software",
-    "email": "contact@xencov.com",
-    "url": "xencov.com"
-  },
+  "name": "squareup",
+  "version": "0.0.1",
+  "description": "The Square Up library provides an easy and convinent access to Square UP API from server-side applications.",
+  "main": "index.js",
   "dependencies": {
     "joi": "^10.4.1",
     "request": "^2.81.0"
   },
-  "description": "Making square up API integration easy by bringing everything at one place",
-  "keywords": [
-    "squareup",
-    "squareup documentation"
-  ],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "@xencov/squareup",
-  "version": "0.0.1.1"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xencov/squareup-node.git"
+  },
+  "author": "Xencov Software",
+  "bugs": {
+    "url": "https://github.com/Xencov/squareup-node/issues"
+  },
+  "homepage": "https://github.com/Xencov/squareup-node#readme"
 }
