@@ -112,27 +112,5 @@ module.exports = {
                 }
             });
         });
-    },
-    getPayment: function (paymentId) {
-        if (!accessToken.isTokenSet()) return new Error('Please set you access token');
-        if (!paymentId) return new Error('Payment ID is required');
-
-        return new Promise((resolve, reject) => {
-            console.log('GET ', `https://connect.squareup.com/v2/payments/${paymentId}`);
-            request({
-                url: `https://connect.squareup.com/v2/payments/${paymentId}`,
-                method: 'GET',
-                headers: {
-                    'Content-Type': "application/json",
-                    'Authorization': "Bearer " + accessToken.getAccessToken()
-                },
-            }, function (err, resp, body) {
-                if (err || body.errors) reject(err || body.errors[0].detail);
-                else {
-                    if (typeof body == 'string') body = JSON.parse(body);
-                    resolve(body);
-                }
-            });
-        });
-    },
+    }
 };

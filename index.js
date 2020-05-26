@@ -14,6 +14,5 @@ SquareUp.prototype.createCustomerCard = customer.createCustomerCard;
 SquareUp.prototype.deleteCustomerCard = customer.deleteCustomerCard;
 SquareUp.prototype.charge = transaction.charge;
 SquareUp.prototype.refund = transaction.refund;
-SquareUp.prototype.getPayment = transaction.getPayment;
 
 module.exports = SquareUp;
