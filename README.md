@@ -18,7 +18,6 @@ This library allows us methods to use the Square Up APIs for :
 * Deleting the card from customer's cards list.
 * Charging the customer.
 * Making refunds.
-* Get payment details.
 
 ##### Usage:
 
@@ -118,9 +117,7 @@ The above method provides an **idempotency_key** which is unique for every trans
 
 5. **refund(transactionId, details_obj, function(err, result))** : For making a refund for customer's card.
 
-6. **getPayment(paymentId, function(err, result))** where `paymentId` could be any ObjectId that corresponds to an actual payment that has COMPLETED.
-
-All methods return a Promise so they are compatible with async-await. 
+All methods return a Promise, so they are compatible with async-await. 
 
 ### More Information
 
